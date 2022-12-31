@@ -41,7 +41,7 @@ function ProfileScreen() {
     } else {
       try {
         const { data } = await axios.put(
-          "/api/users/profile",
+          "https://amazoneserver.vercel.app/api/users/profile",
           {
             name,
             email,

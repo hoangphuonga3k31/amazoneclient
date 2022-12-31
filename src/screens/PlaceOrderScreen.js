@@ -46,7 +46,7 @@ function PlaceOrderScreen() {
     try {
       dispatch({ type: "CREATE_REQUEST" });
       const { data } = await axios.post(
-        "/api/orders",
+        "https://amazoneserver.vercel.app/api/orders",
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,

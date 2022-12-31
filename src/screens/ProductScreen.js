@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useContext, useEffect, useReducer } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
 import axios from "axios";
 import { Row, Col, ListGroup, Card, Badge, Button } from "react-bootstrap";
 

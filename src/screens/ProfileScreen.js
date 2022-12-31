@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useContext, useReducer, useState } from "react";
+import React, { useContext, useReducer, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { toast } from "react-toastify";
@@ -35,7 +35,7 @@ function ProfileScreen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       toast.error("Passwords do not match");
       return;
     } else {

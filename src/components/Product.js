@@ -1,6 +1,6 @@
 import { Button, Card, Badge } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import axios from "axios";
 
 import Rating from "./Rating";

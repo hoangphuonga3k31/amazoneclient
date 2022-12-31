@@ -1,7 +1,7 @@
 import { Badge, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -92,6 +92,7 @@ function App() {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
+              <Route path="/signup" element={<SignupScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
               <Route path="/orderhistory" element={<OrderHistoryScreen />} />
               <Route path="/shipping" element={<ShippingAddressScreen />} />

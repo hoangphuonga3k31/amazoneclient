@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import logger from "use-reducer-logger";
 import { Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
